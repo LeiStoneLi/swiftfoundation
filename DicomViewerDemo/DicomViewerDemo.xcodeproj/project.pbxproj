@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C43AAEFB212A6F4000FFB448 /* test.dcm in Resources */ = {isa = PBXBuildFile; fileRef = C43AAEFA212A6F4000FFB448 /* test.dcm */; };
+		C495588F21269D3400C4FEBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C495588E21269D3400C4FEBF /* AppDelegate.swift */; };
+		C495589121269D3400C4FEBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C495589021269D3400C4FEBF /* ViewController.swift */; };
+		C495589421269D3400C4FEBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C495589221269D3400C4FEBF /* Main.storyboard */; };
+		C495589621269D3400C4FEBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C495589521269D3400C4FEBF /* Assets.xcassets */; };
+		C49558C8212A5B4500C4FEBF /* Dicom2DView.m in Sources */ = {isa = PBXBuildFile; fileRef = C49558C0212A5B4500C4FEBF /* Dicom2DView.m */; };
+		C49558C9212A5B4500C4FEBF /* DicomDecoder.mm in Sources */ = {isa = PBXBuildFile; fileRef = C49558C2212A5B4500C4FEBF /* DicomDecoder.mm */; };
+		C49558CA212A5B4500C4FEBF /* DicomDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = C49558C4212A5B4500C4FEBF /* DicomDictionary.m */; };
+		C49558CB212A5B4500C4FEBF /* DicomDictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = C49558C5212A5B4500C4FEBF /* DicomDictionary.plist */; };
+		C49558CC212A5B4500C4FEBF /* DicomPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = C49558C7212A5B4500C4FEBF /* DicomPlayView.m */; };
+		C4A57EA8212C046D00C3073A /* test3.dcm in Resources */ = {isa = PBXBuildFile; fileRef = C4A57EA7212C046C00C3073A /* test3.dcm */; };
+		C4BA6F9A212A6ACA00992E30 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4BA6F99212A6ACA00992E30 /* Default-568h@2x.png */; };
+		C4DC252E212A90BB00DD09AD /* KSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DC252D212A90BB00DD09AD /* KSViewController.swift */; };
+		C4DC2530212AA59900DD09AD /* DicomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DC252F212AA59900DD09AD /* DicomView.swift */; };
+		C4DC2533212AAA7400DD09AD /* DicomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DC2532212AAA7400DD09AD /* DicomViewController.swift */; };
+		C4DC2534212AB20D00DD09AD /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4DC2535212AB20D00DD09AD /* SnapKit.framework */; };
+		C4DC2537212AB81300DD09AD /* test1.dcm in Resources */ = {isa = PBXBuildFile; fileRef = C4DC2536212AB81300DD09AD /* test1.dcm */; };
+		C4DC253B212AB8FA00DD09AD /* test10.dcm in Resources */ = {isa = PBXBuildFile; fileRef = C4DC2539212AB8FA00DD09AD /* test10.dcm */; };
+		DFBFDF558E021B7F0508C581 /* Pods_DicomViewerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81A04BD6844E64FA11E83D1F /* Pods_DicomViewerDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		17B5BDC66A5C97C6295A9001 /* Pods-DicomViewerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DicomViewerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DicomViewerDemo/Pods-DicomViewerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		81A04BD6844E64FA11E83D1F /* Pods_DicomViewerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DicomViewerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C43AAEFA212A6F4000FFB448 /* test.dcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.dcm; sourceTree = "<group>"; };
+		C495588B21269D3400C4FEBF /* DicomViewerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DicomViewerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C495588E21269D3400C4FEBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C495589021269D3400C4FEBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C495589321269D3400C4FEBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C495589521269D3400C4FEBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C495589A21269D3400C4FEBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C49558AE2126A0F000C4FEBF /* Bridge_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge_Header.h; sourceTree = "<group>"; };
+		C49558BF212A5B4500C4FEBF /* Dicom2DView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dicom2DView.h; sourceTree = "<group>"; };
+		C49558C0212A5B4500C4FEBF /* Dicom2DView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dicom2DView.m; sourceTree = "<group>"; };
+		C49558C1212A5B4500C4FEBF /* DicomDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DicomDecoder.h; sourceTree = "<group>"; };
+		C49558C2212A5B4500C4FEBF /* DicomDecoder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DicomDecoder.mm; sourceTree = "<group>"; };
+		C49558C3212A5B4500C4FEBF /* DicomDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DicomDictionary.h; sourceTree = "<group>"; };
+		C49558C4212A5B4500C4FEBF /* DicomDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DicomDictionary.m; sourceTree = "<group>"; };
+		C49558C5212A5B4500C4FEBF /* DicomDictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DicomDictionary.plist; sourceTree = "<group>"; };
+		C49558C6212A5B4500C4FEBF /* DicomPlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DicomPlayView.h; sourceTree = "<group>"; };
+		C49558C7212A5B4500C4FEBF /* DicomPlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DicomPlayView.m; sourceTree = "<group>"; };
+		C49558CD212A5F1500C4FEBF /* Prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.h; sourceTree = "<group>"; };
+		C4A57EA7212C046C00C3073A /* test3.dcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = test3.dcm; sourceTree = "<group>"; };
+		C4BA6F99212A6ACA00992E30 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C4DC252D212A90BB00DD09AD /* KSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSViewController.swift; sourceTree = "<group>"; };
+		C4DC252F212AA59900DD09AD /* DicomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicomView.swift; sourceTree = "<group>"; };
+		C4DC2532212AAA7400DD09AD /* DicomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicomViewController.swift; sourceTree = "<group>"; };
+		C4DC2535212AB20D00DD09AD /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4DC2536212AB81300DD09AD /* test1.dcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = test1.dcm; sourceTree = "<group>"; };
+		C4DC2539212AB8FA00DD09AD /* test10.dcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = test10.dcm; sourceTree = "<group>"; };
+		D6A916F2C4B381E270E5EB4D /* Pods-DicomViewerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DicomViewerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DicomViewerDemo/Pods-DicomViewerDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C495588821269D3400C4FEBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4DC2534212AB20D00DD09AD /* SnapKit.framework in Frameworks */,
+				DFBFDF558E021B7F0508C581 /* Pods_DicomViewerDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4ED634D641A99BBC39BC7BCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4DC2535212AB20D00DD09AD /* SnapKit.framework */,
+				81A04BD6844E64FA11E83D1F /* Pods_DicomViewerDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B297704978F3309C129A6A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17B5BDC66A5C97C6295A9001 /* Pods-DicomViewerDemo.debug.xcconfig */,
+				D6A916F2C4B381E270E5EB4D /* Pods-DicomViewerDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C43AAEF9212A6F4000FFB448 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C4A57EA7212C046C00C3073A /* test3.dcm */,
+				C4DC2539212AB8FA00DD09AD /* test10.dcm */,
+				C4DC2536212AB81300DD09AD /* test1.dcm */,
+				C43AAEFA212A6F4000FFB448 /* test.dcm */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C495588221269D3400C4FEBF = {
+			isa = PBXGroup;
+			children = (
+				C4BA6F99212A6ACA00992E30 /* Default-568h@2x.png */,
+				C495588D21269D3400C4FEBF /* DicomViewerDemo */,
+				C495588C21269D3400C4FEBF /* Products */,
+				9B297704978F3309C129A6A5 /* Pods */,
+				4ED634D641A99BBC39BC7BCF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C495588C21269D3400C4FEBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C495588B21269D3400C4FEBF /* DicomViewerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C495588D21269D3400C4FEBF /* DicomViewerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C43AAEF9212A6F4000FFB448 /* Resources */,
+				C49558BE212A5B4500C4FEBF /* Dicom */,
+				C495588E21269D3400C4FEBF /* AppDelegate.swift */,
+				C495589021269D3400C4FEBF /* ViewController.swift */,
+				C495589221269D3400C4FEBF /* Main.storyboard */,
+				C495589521269D3400C4FEBF /* Assets.xcassets */,
+				C495589A21269D3400C4FEBF /* Info.plist */,
+				C49558AE2126A0F000C4FEBF /* Bridge_Header.h */,
+				C4DC252D212A90BB00DD09AD /* KSViewController.swift */,
+				C4DC2532212AAA7400DD09AD /* DicomViewController.swift */,
+			);
+			path = DicomViewerDemo;
+			sourceTree = "<group>";
+		};
+		C49558BE212A5B4500C4FEBF /* Dicom */ = {
+			isa = PBXGroup;
+			children = (
+				C49558CD212A5F1500C4FEBF /* Prefix.h */,
+				C49558BF212A5B4500C4FEBF /* Dicom2DView.h */,
+				C49558C0212A5B4500C4FEBF /* Dicom2DView.m */,
+				C49558C1212A5B4500C4FEBF /* DicomDecoder.h */,
+				C49558C2212A5B4500C4FEBF /* DicomDecoder.mm */,
+				C49558C3212A5B4500C4FEBF /* DicomDictionary.h */,
+				C49558C4212A5B4500C4FEBF /* DicomDictionary.m */,
+				C49558C5212A5B4500C4FEBF /* DicomDictionary.plist */,
+				C49558C6212A5B4500C4FEBF /* DicomPlayView.h */,
+				C49558C7212A5B4500C4FEBF /* DicomPlayView.m */,
+				C4DC252F212AA59900DD09AD /* DicomView.swift */,
+			);
+			path = Dicom;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C495588A21269D3400C4FEBF /* DicomViewerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C495589D21269D3400C4FEBF /* Build configuration list for PBXNativeTarget "DicomViewerDemo" */;
+			buildPhases = (
+				3F7E928714A49775B50D8333 /* [CP] Check Pods Manifest.lock */,
+				C495588721269D3400C4FEBF /* Sources */,
+				C495588821269D3400C4FEBF /* Frameworks */,
+				C495588921269D3400C4FEBF /* Resources */,
+				3664521F5E603459B430C520 /* [CP] Embed Pods Frameworks */,
+				C2376C4CA4C84C80889C50A9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DicomViewerDemo;
+			productName = DicomViewerDemo;
+			productReference = C495588B21269D3400C4FEBF /* DicomViewerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C495588321269D3400C4FEBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = SrearAlex;
+				TargetAttributes = {
+					C495588A21269D3400C4FEBF = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C495588621269D3400C4FEBF /* Build configuration list for PBXProject "DicomViewerDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C495588221269D3400C4FEBF;
+			productRefGroup = C495588C21269D3400C4FEBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C495588A21269D3400C4FEBF /* DicomViewerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C495588921269D3400C4FEBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C49558CB212A5B4500C4FEBF /* DicomDictionary.plist in Resources */,
+				C4BA6F9A212A6ACA00992E30 /* Default-568h@2x.png in Resources */,
+				C4DC2537212AB81300DD09AD /* test1.dcm in Resources */,
+				C495589621269D3400C4FEBF /* Assets.xcassets in Resources */,
+				C4DC253B212AB8FA00DD09AD /* test10.dcm in Resources */,
+				C43AAEFB212A6F4000FFB448 /* test.dcm in Resources */,
+				C495589421269D3400C4FEBF /* Main.storyboard in Resources */,
+				C4A57EA8212C046D00C3073A /* test3.dcm in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3664521F5E603459B430C520 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DicomViewerDemo/Pods-DicomViewerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F7E928714A49775B50D8333 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C2376C4CA4C84C80889C50A9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DicomViewerDemo/Pods-DicomViewerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C495588721269D3400C4FEBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C495589121269D3400C4FEBF /* ViewController.swift in Sources */,
+				C4DC2530212AA59900DD09AD /* DicomView.swift in Sources */,
+				C49558C9212A5B4500C4FEBF /* DicomDecoder.mm in Sources */,
+				C495588F21269D3400C4FEBF /* AppDelegate.swift in Sources */,
+				C49558CC212A5B4500C4FEBF /* DicomPlayView.m in Sources */,
+				C49558CA212A5B4500C4FEBF /* DicomDictionary.m in Sources */,
+				C49558C8212A5B4500C4FEBF /* Dicom2DView.m in Sources */,
+				C4DC252E212A90BB00DD09AD /* KSViewController.swift in Sources */,
+				C4DC2533212AAA7400DD09AD /* DicomViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C495589221269D3400C4FEBF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C495589321269D3400C4FEBF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C495589B21269D3400C4FEBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C495589C21269D3400C4FEBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C495589E21269D3400C4FEBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17B5BDC66A5C97C6295A9001 /* Pods-DicomViewerDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8834KP55GJ;
+				INFOPLIST_FILE = DicomViewerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lilei.learn.DicomViewerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = DicomViewerDemo/Bridge_Header.h;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C495589F21269D3400C4FEBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6A916F2C4B381E270E5EB4D /* Pods-DicomViewerDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8834KP55GJ;
+				INFOPLIST_FILE = DicomViewerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lilei.learn.DicomViewerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = DicomViewerDemo/Bridge_Header.h;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C495588621269D3400C4FEBF /* Build configuration list for PBXProject "DicomViewerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C495589B21269D3400C4FEBF /* Debug */,
+				C495589C21269D3400C4FEBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C495589D21269D3400C4FEBF /* Build configuration list for PBXNativeTarget "DicomViewerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C495589E21269D3400C4FEBF /* Debug */,
+				C495589F21269D3400C4FEBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C495588321269D3400C4FEBF /* Project object */;
+}

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9mY-5B-AWO">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="K0n-OH-cPA">
+            <objects>
+                <viewController id="9ch-Uw-wYY" customClass="ViewController" customModule="DicomViewerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l5d-Jb-I15"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hk4-ca-yXn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h9F-mj-PZs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVm-YS-p0s" customClass="DicomPlayView">
+                                <rect key="frame" x="0.0" y="104" width="375" height="460"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bVm-YS-p0s" firstAttribute="width" secondItem="h9F-mj-PZs" secondAttribute="width" id="34u-QC-Ykv"/>
+                            <constraint firstItem="bVm-YS-p0s" firstAttribute="top" secondItem="l5d-Jb-I15" secondAttribute="bottom" constant="84" id="A4z-mf-OSl"/>
+                            <constraint firstItem="bVm-YS-p0s" firstAttribute="centerX" secondItem="h9F-mj-PZs" secondAttribute="centerX" id="Cez-hU-Jgh"/>
+                            <constraint firstItem="Hk4-ca-yXn" firstAttribute="top" secondItem="bVm-YS-p0s" secondAttribute="bottom" constant="103" id="qz7-oP-yg0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dicomPlayView" destination="bVm-YS-p0s" id="Z5y-xf-V72"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BY0-Ls-fNq" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50" y="18"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="02Z-Nn-LOf">
+            <objects>
+                <viewController id="9u9-Pd-jY4" customClass="KSViewController" customModule="DicomViewerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tur-gI-9Bb"/>
+                        <viewControllerLayoutGuide type="bottom" id="ESG-qy-DhX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kb0-5E-R5Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OA1-ow-xLt" customClass="Dicom2DView">
+                                <rect key="frame" x="-69" y="104" width="513" height="460"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="HTX-K7-FsE" userLabel="Modality">
+                                <rect key="frame" x="11" y="26" width="283" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="1yJ-qW-Pqr" userLabel="WW_WL">
+                                <rect key="frame" x="11" y="44" width="283" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="PatientName" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Hbe-8z-NER" userLabel="PatientName">
+                                <rect key="frame" x="11" y="8" width="283" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="SD3-C3-eeh" userLabel="Date">
+                                <rect key="frame" x="11" y="61" width="283" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="date" destination="SD3-C3-eeh" id="6in-J3-aAw"/>
+                        <outlet property="dicom2DView" destination="OA1-ow-xLt" id="2YB-HO-kVd"/>
+                        <outlet property="modality" destination="HTX-K7-FsE" id="aVR-8c-2ni"/>
+                        <outlet property="patientName" destination="Hbe-8z-NER" id="6pN-z0-Poj"/>
+                        <outlet property="windowInfo" destination="1yJ-qW-Pqr" id="9xa-my-dAO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p1z-iD-tdo" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-82" y="-707"/>
+        </scene>
+        <!--Dicom View Controller-->
+        <scene sceneID="yy3-3t-F2A">
+            <objects>
+                <viewController id="9mY-5B-AWO" customClass="DicomViewController" customModule="DicomViewerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N7l-8R-nis"/>
+                        <viewControllerLayoutGuide type="bottom" id="5KW-de-lXX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WEt-zy-rFL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wwa-0x-EOu" customClass="DicomView" customModule="DicomViewerDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wwa-0x-EOu" firstAttribute="centerX" secondItem="WEt-zy-rFL" secondAttribute="centerX" id="Af0-H0-zcr"/>
+                            <constraint firstItem="5KW-de-lXX" firstAttribute="top" secondItem="Wwa-0x-EOu" secondAttribute="bottom" id="YZ4-lb-xoT"/>
+                            <constraint firstItem="Wwa-0x-EOu" firstAttribute="width" secondItem="WEt-zy-rFL" secondAttribute="width" id="dFp-YA-muI"/>
+                            <constraint firstItem="Wwa-0x-EOu" firstAttribute="top" secondItem="N7l-8R-nis" secondAttribute="bottom" id="ieh-9l-tPJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dicomView" destination="Wwa-0x-EOu" id="hAc-El-7Db"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aJp-kU-6n9" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="-707"/>
+        </scene>
+    </scenes>
+</document>
